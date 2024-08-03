@@ -374,6 +374,17 @@ nav {
   border-right: 100%;
 }
 
+/* #btn_check {
+  width: 100%;
+  margin-left: 150%;
+}
+
+@media (max-width: 768px) {
+  #btn_check {
+    
+  }
+} */
+
 .about {
   position: relative;
   isolation: isolate;
