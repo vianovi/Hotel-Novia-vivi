@@ -13,7 +13,7 @@
   --header-font: "Playfair Display", serif;
 }
 
-.news__grid
+.menu__images
 
 * {
   padding: 0;
@@ -134,13 +134,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-nav {
-  position: fixed;
-  isolation: isolate;
-  width: 100%;
-  z-index: 9;
-}
-
 .nav__bar {
   position: relative;
   isolation: isolate;
@@ -177,7 +170,7 @@ nav {
   font-size: 15px;
   width: 0;
   transition: 0.8s;
-  border-radius: 0%;
+  border-radius: 1%;
   color: #ffffff;
 }
 
@@ -373,17 +366,6 @@ nav {
   border-left: 100%;
   border-right: 100%;
 }
-
-/* #btn_check {
-  width: 100%;
-  margin-left: 150%;
-}
-
-@media (max-width: 768px) {
-  #btn_check {
-    
-  }
-} */
 
 .about {
   position: relative;
@@ -634,7 +616,7 @@ nav {
   color: var(--white);
 }
 
-.menu__images {
+/* .menu__images {
   margin-bottom: 4rem;
   display: grid;
   gap: 1rem;
@@ -643,7 +625,66 @@ nav {
 .menu__images img {
   border-radius: 5px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+} */
+
+
+
+.bg-service{
+  width: 90%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-row-gap: 20px;
+  flex-wrap: wrap;
 }
+.bg-service .service-one{
+  width: 32%;
+  position: relative;
+  overflow: hidden;
+}
+.service-one img{
+  width: 100%;
+  transition: 1s ease-in-out;
+}
+.service-one .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.4);
+  width: 100%;
+  height: 100%;
+}
+.service-one .over-txt{
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  width: 100%;
+  color: #FFF;
+}
+.service-one .over-txt p{
+  margin: 0;
+  color: var(--main-color);
+  text-transform: capitalize;
+}
+.service-one .over-txt h4{
+  text-transform: capitalize;
+}
+.service-one:hover img{
+  transform: scale(1.1);
+}
+@media(max-width: 991px){
+  .bg-service .service-one{
+      width: 49%;
+  }
+}
+@media(max-width: 576px){
+  .bg-service .service-one{
+      width: 100%;
+  }
+}
+
+
 
 .menu__banner {
   list-style: none;

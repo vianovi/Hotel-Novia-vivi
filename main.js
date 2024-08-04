@@ -48,17 +48,17 @@ ScrollReveal().reveal(".header__container .btn2", {
 // room container
 ScrollReveal().reveal(".room__card", {
     ...scrollRevealOption,
-    interval: 700,
+    interval: 1000,
 });
 
 // feature container
 ScrollReveal().reveal(".feature__card", {
     ...scrollRevealOption,
-    interval: 700,
+    interval: 1000,
 });
 
 // news container
 ScrollReveal().reveal(".news__card", {
     ...scrollRevealOption,
-    interval: 700,
+    interval: 1000,
 });
