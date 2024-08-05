@@ -1,6 +1,28 @@
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn.querySelector("i");
+const video = document.getElementById('videoPlayer');
+const STORAGE_KEY = 'videoCurrentTime';
+
+// Fungsi untuk menyimpan posisi video
+function saveVideoPosition() {
+    localStorage.setItem(STORAGE_KEY, video.currentTime);
+}
+
+// Fungsi untuk memulihkan posisi video
+function loadVideoPosition() {
+    const savedTime = localStorage.getItem(STORAGE_KEY);
+    if (savedTime) {
+        video.currentTime = parseFloat(savedTime);
+    }
+}
+
+// Event listener untuk menyimpan posisi video saat pengguna meninggalkan halaman
+video.addEventListener('pause', saveVideoPosition);
+video.addEventListener('ended', () => localStorage.removeItem(STORAGE_KEY));
+
+// Memulihkan posisi video saat halaman dimuat
+document.addEventListener('DOMContentLoaded', loadVideoPosition);
 
 menuBtn.addEventListener("click", (e) => {
     navLinks.classList.toggle("open");

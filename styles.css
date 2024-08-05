@@ -13,8 +13,6 @@
   --header-font: "Playfair Display", serif;
 }
 
-.menu__images
-
 * {
   padding: 0;
   margin: 0;
@@ -616,20 +614,7 @@ body {
   color: var(--white);
 }
 
-/* .menu__images {
-  margin-bottom: 4rem;
-  display: grid;
-  gap: 1rem;
-}
-
-.menu__images img {
-  border-radius: 5px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-} */
-
-
-
-.bg-service{
+.image_backgrond{
   width: 90%;
   margin: 100px auto;
   display: flex;
@@ -638,16 +623,16 @@ body {
   grid-row-gap: 20px;
   flex-wrap: wrap;
 }
-.bg-service .service-one{
+.image_backgrond .image_menu{
   width: 32%;
   position: relative;
   overflow: hidden;
 }
-.service-one img{
+.image_menu img{
   width: 100%;
   transition: 1s ease-in-out;
 }
-.service-one .overlay{
+.image_menu .overlay{
   position: absolute;
   top: 0;
   left: 0;
@@ -655,36 +640,34 @@ body {
   width: 100%;
   height: 100%;
 }
-.service-one .over-txt{
+.image_menu .over-txt{
   position: absolute;
   bottom: 30px;
   text-align: center;
   width: 100%;
   color: #FFF;
 }
-.service-one .over-txt p{
+.image_menu .over-txt p{
   margin: 0;
-  color: var(--main-color);
+  color: var(--secondary-color);
   text-transform: capitalize;
 }
-.service-one .over-txt h4{
+.image_menu .over-txt h4{
   text-transform: capitalize;
 }
-.service-one:hover img{
+.image_menu:hover img{
   transform: scale(1.1);
 }
 @media(max-width: 991px){
-  .bg-service .service-one{
+  .image_backgrond .image_menu{
       width: 49%;
   }
 }
 @media(max-width: 576px){
-  .bg-service .service-one{
+  .image_backgrond .image_menu{
       width: 100%;
   }
 }
-
-
 
 .menu__banner {
   list-style: none;
