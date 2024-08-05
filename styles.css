@@ -13,6 +13,8 @@
   --header-font: "Playfair Display", serif;
 }
 
+.btn
+
 * {
   padding: 0;
   margin: 0;
@@ -130,6 +132,13 @@ body {
 
 body {
   font-family: "Poppins", sans-serif;
+}
+
+nav {
+  position: fixed;
+  isolation: isolate;
+  width: 100%;
+  z-index: 111;
 }
 
 .nav__bar {
@@ -361,9 +370,20 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  border-left: 100%;
-  border-right: 100%;
+  display: block;
 }
+
+/* #btn_check {
+  margin-left: 160%;
+  width: 100%;
+}
+
+@media(max-width: 768px) {
+  #btn_check {
+    margin-left: none;
+    width: none;
+  }
+} */
 
 .about {
   position: relative;
@@ -908,6 +928,7 @@ body {
 
   .nav__menu__btn {
     display: none;
+
   }
 
   .nav__links {
